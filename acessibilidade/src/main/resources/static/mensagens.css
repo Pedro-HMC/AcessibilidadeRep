@@ -1,0 +1,47 @@
+/*Css da página*/
+
+html {
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 12px;
+    background-color: #4054B2;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+.titulo {
+    margin-top: 1%;
+    font-size: 60px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #293c8f;
+}
+
+h4,
+.resumo {
+    color: white;
+}
+
+.resumo {
+    font-size: 20px;
+}
+
+.TLista {
+    font-size: 25px;
+    background-color: white;
+    color: #293c8f;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: #4054B2;
+    color: white;
+    border-color: white;
+    font-weight: bold;
+}
