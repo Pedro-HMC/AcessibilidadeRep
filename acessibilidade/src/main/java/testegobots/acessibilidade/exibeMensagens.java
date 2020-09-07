@@ -70,9 +70,10 @@ public class exibeMensagens {
         "<div class=\"col\"></div>"+
     "</div>"+
 //Div para iniciar a lista de mensagens
-    "<div class=\"row\">"+
-        "<div class=\"col-sm-1 TLista mb-4\"></div>"+
-        "<div class=\"col- TLista mb-4\">Lista de Mensagens</div>"+
+    "<div class=\"row bt\">"+
+        "<div class=\"col TLista \"></div>"+
+        "<div class=\"col- TLista \">Lista de Mensagens</div>"+
+        "<div class=\"col TLista \"></div>"+
     "</div>"+
 "</body>"+
 
@@ -80,12 +81,13 @@ public class exibeMensagens {
 //Essa foi a forma que encontrei para fazer as mensagens aparecerem sempre que enviadas pelo input sem precisar criar uma nova página html. O código abaixo funciona como um "loop", sempre que uma mensagem é enviada ocorre a criação de uma nova linha para inserir ela na página
     for(mensagens m : mensagens){
     html = html +
-    "<div class=\"row\">"+
-    "<div class=\"col-sm-1\"></div>"+
-        "<div class=\"col-sm-5\">"+
+    "<div class=\"row mt-2\">"+
+        "<div class=\"col\"></div>"+
+        "<div class=\"col-\">"+
 //Aqui a mensagem é recebida e formatada com as Strings criadas anteriormente. Uma rodando "sobre" a outra para que os textos sejam formatados corretamente
             "<h4>"+ traduzInternetes2(traduzInternetes(m.getMensagem())) +"</h4>"+
         "</div>"+
+        "<div class=\"col\"></div>"+
     "</div>";
     }
     return html;

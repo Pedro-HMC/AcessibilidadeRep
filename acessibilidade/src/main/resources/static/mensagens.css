@@ -45,3 +45,8 @@ input[type=submit]:hover {
     border-color: white;
     font-weight: bold;
 }
+
+.bt {
+    border-style: solid;
+    margin: 0%;
+}
